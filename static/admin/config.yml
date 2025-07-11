@@ -1,4 +1,63 @@
 backend:
+collections:
+  - name: "routes"
+    label: "Pages"
+    files:
+      - file: "src/routes/index.md"
+        name: "accueil"
+        label: "Page d’accueil"
+        nav_label: "Accueil"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - file: "src/routes/qui-sommes-nous.md"
+        name: "qui"
+        label: "Qui sommes-nous"
+        nav_label: "Qui sommes-nous"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - file: "src/routes/actualite.md"
+        name: "actualite"
+        label: "Actualité"
+        nav_label: "Actualité"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - file: "src/routes/la-revue.md"
+        name: "revue"
+        label: "La revue"
+        nav_label: "La revue"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - file: "src/routes/recension.md"
+        name: "recension"
+        label: "Recension"
+        nav_label: "Recension"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - file: "src/routes/contact.md"
+        name: "contact"
+        label: "Contact"
+        nav_label: "Contact"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+
+      - file: "src/routes/contact/soumettre.md"
+        name: "soumettre"
+        label: "Soumettre un article"
+        nav_label: "Soumettre un article"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
   name: git-gateway
   branch: main
 collections:
@@ -17,3 +76,4 @@ public_folder: "/uploads"
 # site_url: https://your-site.com
 # display_url: https://your-site.com
 # logo_url: https://your-site.com/images/logo.svg
+aujout des pages avec nav-label
