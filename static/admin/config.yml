@@ -1,4 +1,4 @@
-backend:
+backend:publish_mode: editorial_workflow
   name: git-gateway
   branch: main
 collections:
@@ -17,3 +17,4 @@ public_folder: "/uploads"
 # site_url: https://your-site.com
 # display_url: https://your-site.com
 # logo_url: https://your-site.com/images/logo.svg
+Activation du mode brouillon
